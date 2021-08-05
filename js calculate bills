@@ -1,0 +1,20 @@
+let gas = [10, 20, 30 , 40, 50];
+let food = [15, 25 , 35, 45];
+let electricity = [11, 22, 33, 44]
+
+function calculateTotal(arr){
+    total = 0;
+    for(let i = 0; i < arr.length; i++){
+        total += arr[i];
+    }
+    return total;
+}
+
+    
+const gasTotal = calculateTotal(gas);
+const foodTotal = calculateTotal(food);
+const electricityTotal = calculateTotal(electricity)
+
+console.log(`Gas total is: ${gasTotal}`);
+console.log(`Food total is: ${foodTotal}`);
+console.log(`Electricity total is: ${electricityTotal}`);
